@@ -5,12 +5,10 @@ Static site (HTML + CSS + vanilla JS, no build step), deployed with GitHub Pages
 - `index.html` — content
 - `styles.css` — design system & layout
 - `main.js` — nav, scroll reveal, interactive architecture diagrams
+- `assets/docs/Malek_Mayeh_CV.pdf` — downloadable CV
 
-## Placeholders to fill
-Every unverified detail is marked with `class="ph"` and renders as an amber dashed chip ("✎ …").
-Find them all with:
-
-    grep -n 'class="[^"]*ph' index.html
+## Placeholders
+For any unverified detail, wrap it in `<span class="ph">…</span>`; it renders as an amber dashed chip ("✎ …") so it can't ship unnoticed.
 
 ## Local preview
 

@@ -58,12 +58,12 @@
       </p>
       <div class="hero__actions reveal">
         <a class="btn btn--primary" href="#work">View case studies <span aria-hidden="true">→</span></a>
-        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        <a class="btn btn--ghost" href="assets/docs/Malek_Mayeh_CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
       </div>
       <ul class="hero__meta reveal" aria-label="Quick facts">
         <li><span>Based in</span>Tunis, Tunisia</li>
-        <li><span>Open to</span>Europe &amp; Canada</li>
-        <li><span>Speaks</span>Arabic · French · English</li>
+        <li><span>Open to</span>Relocation · Europe &amp; Canada</li>
+        <li><span>Speaks</span>Arabic · English · French</li>
       </ul>
     </div>
 
@@ -80,6 +80,7 @@
         <div><dt>Frontend</dt><dd>Angular · TypeScript</dd></div>
         <div><dt>Mobile</dt><dd>React Native · Expo</dd></div>
         <div><dt>Platform</dt><dd>YARP · Docker · Kubernetes · Nginx · GitLab CI/CD</dd></div>
+        <div><dt>Native</dt><dd>Kotlin (Android)</dd></div>
         <div><dt>AI</dt><dd>Ollama · Groq · LLM summarization</dd></div>
         <div><dt>Interactive</dt><dd>Unity · Unreal · GameMaker · AR/VR</dd></div>
       </dl>
@@ -130,15 +131,15 @@
 
     <ol class="timeline">
       <li class="tl reveal">
-        <div class="tl__when"><span class="ph" title="Placeholder">Start date</span> — Present</div>
+        <div class="tl__when">Nov 2024 — Present</div>
         <div class="tl__body">
           <h3>Full-Stack Developer · <span class="muted">Poulina Group Holding (PGH), Tunisia</span></h3>
           <p>Building and maintaining enterprise web and mobile applications for group-wide digital transformation.</p>
           <ul class="bullets">
             <li>Contributed to an enterprise <strong>marketing &amp; advertising management platform</strong>: billboard planning, multi-step approval workflows, role-based permissions, automated notifications, campaign management, social-media integrations and AI-assisted text processing.</li>
-            <li>Designed a <strong>unified API gateway</strong> (YARP) giving all internal apps a single entry point with path-based routing managed from an admin UI, so new apps no longer need their own DNS entry.</li>
-            <li>Designed <strong>Poulina Store</strong>, an internal mobile app store that is fed by GitLab CI/CD, filtered per subsidiary and distributed through the company MDM.</li>
-            <li>Worked on a <strong>5S mobile app</strong> (React Native / Expo), the <strong>Plateforme DRH</strong> HR platform, and <strong>document-digitization</strong> tooling (OCR/OMR with Tesseract, QR codes, automated processing).</li>
+            <li>Designed, built and deployed a <strong>unified API gateway</strong> (YARP), including its admin UI, giving all internal apps a single entry point with path-based routing managed from an admin UI, so new apps no longer need their own DNS entry.</li>
+            <li>Designed <strong>Poulina Store</strong> (in development), an internal mobile app store with a native Kotlin client that is fed by GitLab CI/CD, filtered per subsidiary and distributed through the company MDM.</li>
+            <li>Built the <strong>5S mobile app</strong> for tablet-based photo capture, the <strong>Climat Social</strong> anonymous-feedback module of the Plateforme DRH HR platform, and a <strong>document-digitization</strong> solution (OCR/OMR with Tesseract, QR codes, automated processing).</li>
             <li>Integrated <strong>local and cloud LLMs</strong> (Ollama, Groq) for summarization and text-processing features.</li>
             <li>Shipped with Docker, GitLab CI/CD, Kubernetes and Nginx.</li>
           </ul>
@@ -163,7 +164,7 @@
         <div class="tl__when">Before &amp; alongside</div>
         <div class="tl__body">
           <h3>Independent 2D/3D, game &amp; XR development</h3>
-          <p>Self-taught C# to build in Unity; shipped a 2D platformer in GameMaker and a 3D first-person game in Unity; worked with Unreal Engine and AR/VR. Self-hosted and administered FiveM game servers and local AI models.</p>
+          <p>Self-taught C# to build in Unity; shipped a 2D platformer in GameMaker and a 3D first-person game in Unity; worked with Unreal Engine and AR/VR. Contributed to the development of a self-hosted FiveM multiplayer server, and host AI models locally and in the cloud, including remote access via tunnelling.</p>
         </div>
       </li>
     </ol>
@@ -180,7 +181,7 @@
     <!-- CASE 1: GATEWAY -->
     <article class="case reveal" aria-labelledby="gw-title">
       <header class="case__head">
-        <div class="case__labels"><span class="badge badge--role">Designed &amp; built</span><span class="badge">Platform engineering</span></div>
+        <div class="case__labels"><span class="badge badge--role">Designed, built &amp; deployed</span><span class="badge">Platform engineering</span></div>
         <h3 id="gw-title" class="h3">Unified API Gateway</h3>
         <p class="case__sum">One shared hostname that routes to every internal app's backend by path, with routes managed from an admin UI, so shipping a new app no longer starts with a DNS request.</p>
       </header>
@@ -236,7 +237,7 @@
       <div class="case__grid">
         <section><h4>Business problem</h4><p>Every internal Poulina app has its own backend, secured with JWT for its web and mobile front ends. Each new app needed its own DNS entry registered through the network team. That slowed delivery and multiplied the infrastructure to manage.</p></section>
         <section><h4>Solution</h4><p>A single shared gateway hostname that routes requests to each app's backend by path. Routes are managed through a separate admin front end, so adding an app is a route change instead of a network ticket. Built on YARP, extending my existing YARP gateway experience.</p></section>
-        <section><h4>My responsibilities</h4><p>Architecture of the routing model, gateway implementation on ASP.NET Core / YARP, and the admin front end used to manage routes. <span class="ph">Malek: confirm or adjust scope (deployment, rollout, docs)</span></p></section>
+        <section><h4>My responsibilities</h4><p>End-to-end ownership: architecture of the routing model, gateway implementation on ASP.NET Core / YARP, the admin front end used to manage routes, and deployment.</p></section>
         <section><h4>Engineering considerations</h4>
           <ul class="bullets">
             <li><strong>Dynamic routing:</strong> routes and destinations are data managed from the admin UI, not hard-coded gateway config.</li>
@@ -247,7 +248,6 @@
       </div>
       <div class="impact">
         <div><span class="impact__k">Impact</span>No new DNS entry per app · fewer network-team dependencies · one entry point for all internal backends</div>
-        <div class="impact__m"><span class="ph">Malek: add a verified metric if you have one (e.g. apps onboarded)</span></div>
       </div>
       <ul class="tags" aria-label="Technologies"><li>YARP</li><li>ASP.NET Core</li><li>.NET 8</li><li>JWT</li><li>Admin front end</li></ul>
     </article>
@@ -255,7 +255,7 @@
     <!-- CASE 2: STORE -->
     <article class="case reveal" aria-labelledby="st-title">
       <header class="case__head">
-        <div class="case__labels"><span class="badge badge--role">Designed</span><span class="badge badge--status ph" title="Placeholder">Status: designed &amp; in development / delivered to production</span><span class="badge">Mobile platform</span></div>
+        <div class="case__labels"><span class="badge badge--role">Designed</span><span class="badge badge--status">Status: designed · in development</span><span class="badge">Mobile platform</span></div>
         <h3 id="st-title" class="h3">Poulina Store: internal mobile app store</h3>
         <p class="case__sum">A Play Store-style internal app store. Each subsidiary (filiale) sees and downloads only the apps it's allowed to, and updates reach devices automatically, straight from CI/CD.</p>
       </header>
@@ -282,7 +282,7 @@
             <g class="node"><rect x="200" y="30" width="140" height="60" rx="12"/><text x="270" y="56" class="t">GitLab CI/CD</text><text x="270" y="74" class="s">build &amp; publish job</text></g>
             <g class="node node--hub"><rect x="400" y="25" width="140" height="70" rx="14"/><text x="470" y="54" class="t">Store backend</text><text x="470" y="74" class="s">apps · versions · ACL</text></g>
             <g class="node node--cfg"><rect x="395" y="130" width="150" height="34" rx="10"/><text x="470" y="152" class="t sm">Admin portal · SQL Server</text></g>
-            <g class="node"><rect x="600" y="30" width="140" height="60" rx="12"/><text x="670" y="56" class="t">Store app</text><text x="670" y="74" class="s">via MDM · SSO login</text></g>
+            <g class="node"><rect x="600" y="30" width="140" height="60" rx="12"/><text x="670" y="56" class="t">Kotlin store app</text><text x="670" y="74" class="s">via MDM · SSO login</text></g>
             <g class="node node--end"><circle cx="820" cy="60" r="26"/><text x="820" y="64" class="t sm">Devices</text></g>
             <circle r="4" class="pkt"><animateMotion dur="1.2s" repeatCount="indefinite"><mpath href="#st-1"/></animateMotion></circle>
             <circle r="4" class="pkt"><animateMotion dur="1.2s" begin="-.4s" repeatCount="indefinite"><mpath href="#st-2"/></animateMotion></circle>
@@ -315,13 +315,12 @@
             <li><strong>MDM distribution:</strong> the store client itself is pushed to subsidiary devices through the company MDM.</li>
           </ul>
         </section>
-        <section><h4>Stack</h4><p>SQL Server, GitLab CI/CD, admin web portal, company MDM, shared Poulina authentication. Android client in React Native or Kotlin. <span class="ph">Malek: confirm final client choice</span></p></section>
+        <section><h4>Stack</h4><p>Native Android client in <strong>Kotlin</strong>, chosen for direct, faster access to Android's package-installer and update APIs, which is what makes silent, automatic app updates practical. Backed by SQL Server, GitLab CI/CD, an admin web portal, the company MDM and the shared Poulina authentication.</p></section>
       </div>
       <div class="impact">
-        <div><span class="impact__k">Impact</span>Removes manual APK distribution · centralized, per-filiale control of who gets which app · automatic updates</div>
-        <div class="impact__m"><span class="ph">Malek: status and any verified adoption figures go here. None are claimed until you add them.</span></div>
+        <div><span class="impact__k">Goal</span>Remove manual APK distribution · centralized, per-filiale control of who gets which app · automatic updates</div>
       </div>
-      <ul class="tags" aria-label="Technologies"><li>GitLab CI/CD</li><li>SQL Server</li><li>React Native / Kotlin</li><li>MDM</li><li>SSO</li></ul>
+      <ul class="tags" aria-label="Technologies"><li>GitLab CI/CD</li><li>SQL Server</li><li>Kotlin</li><li>Android</li><li>MDM</li><li>SSO</li></ul>
     </article>
 
     <h2 class="h2 h2--sub reveal">Enterprise &amp; product work</h2>
@@ -339,21 +338,20 @@
         <ul class="tags"><li>Angular</li><li>TypeScript</li><li>.NET 8</li><li>EF Core</li><li>SQL Server</li><li>SignalR</li><li>Hangfire</li></ul>
       </article>
       <article class="card reveal">
-        <div class="case__labels"><span class="badge badge--role ph">Role: developed / contributed</span></div>
+        <div class="case__labels"><span class="badge badge--role">Built the mobile app</span></div>
         <h3 class="h4">5S Mobile Application</h3>
-        <p>A mobile app supporting the <strong>5S</strong> workplace-organization method (Sort, Set in order, Shine, Standardize, Sustain), built for on-site, operational use.</p>
-        <p class="ph block">Malek: add 1–2 lines on key features (audits, photos, scoring, offline…) and your role.</p>
-        <ul class="tags"><li>React Native</li><li>Expo</li><li>REST APIs</li></ul>
+        <p>The <strong>5S</strong> workplace-organization method (Sort, Set in order, Shine, Standardize, Sustain) relies on visual evidence from the shop floor. I built the mobile version of the 5S platform so teams can <strong>capture photos directly on tablets</strong> during on-site 5S work, feeding them straight into the existing system.</p>
+        <ul class="tags"><li>React Native</li><li>Expo</li><li>Camera</li><li>Tablets</li><li>REST APIs</li></ul>
       </article>
       <article class="card reveal">
-        <div class="case__labels"><span class="badge badge--role ph">Role: developed / contributed</span></div>
-        <h3 class="h4">Plateforme DRH: HR Management Platform</h3>
-        <p>An internal HR management platform for the group's human-resources department (Direction des Ressources Humaines).</p>
-        <p class="ph block">Malek: add the main modules you built (e.g. requests, approvals, employee records) and your role.</p>
+        <div class="case__labels"><span class="badge badge--role">Built: Climat Social module</span></div>
+        <h3 class="h4">Plateforme DRH: Climat Social</h3>
+        <p>Within the group's HR management platform (Direction des Ressources Humaines), I built <strong>Climat Social</strong>, a module where employees can <strong>anonymously</strong> raise complaints or express appreciation about their work environment.</p>
+        <p>Anonymity is the core requirement: people only speak freely if they trust it, which gives HR an honest read on workplace climate.</p>
         <ul class="tags"><li>Angular</li><li>ASP.NET Core</li><li>SQL Server</li></ul>
       </article>
       <article class="card reveal">
-        <div class="case__labels"><span class="badge badge--role ph">Role: developed / contributed</span></div>
+        <div class="case__labels"><span class="badge badge--role">Designed &amp; built solo</span></div>
         <h3 class="h4">Document Digitization &amp; Processing</h3>
         <p>Turning paper documents into structured data: OCR for text, OMR for marked forms and QR codes for identification and routing, all inside an automated processing pipeline.</p>
         <ul class="bullets">
@@ -424,7 +422,7 @@
       <li><strong>Unreal Engine</strong><span>3D scenes &amp; prototyping</span></li>
       <li><strong>GameMaker</strong><span>2D games end to end</span></li>
       <li><strong>AR / VR</strong><span>Holberton AR/VR specialization</span></li>
-      <li><strong>FiveM servers</strong><span>Self-hosted &amp; administered</span></li>
+      <li><strong>FiveM server</strong><span>Self-hosted; contributed to development</span></li>
       <li><strong>Self-hosted AI</strong><span>Local LLMs on own hardware</span></li>
     </ul>
   </div>
@@ -438,12 +436,12 @@
     <div class="skills">
       <div class="skill reveal"><h3>Backend</h3><ul><li>C#</li><li>ASP.NET Core</li><li>.NET 8</li><li>Entity Framework Core</li><li>REST APIs</li><li>SignalR</li><li>Hangfire</li></ul></div>
       <div class="skill reveal"><h3>Frontend</h3><ul><li>Angular</li><li>TypeScript</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul></div>
-      <div class="skill reveal"><h3>Mobile</h3><ul><li>React Native</li><li>Expo</li></ul></div>
-      <div class="skill reveal"><h3>Data</h3><ul><li>SQL Server</li><li>EF Core migrations</li></ul></div>
-      <div class="skill reveal"><h3>Platform &amp; DevOps</h3><ul><li>Docker</li><li>Kubernetes</li><li>GitLab CI/CD</li><li>Nginx</li><li>YARP API Gateway</li></ul></div>
-      <div class="skill reveal"><h3>AI</h3><ul><li>Ollama</li><li>Groq</li><li>LLM summarization</li><li>OCR / OMR (Tesseract)</li></ul></div>
+      <div class="skill reveal"><h3>Mobile</h3><ul><li>React Native</li><li>Expo</li><li>Kotlin (Android)</li></ul></div>
+      <div class="skill reveal"><h3>Data</h3><ul><li>SQL Server</li><li>MySQL</li><li>EF Core migrations</li></ul></div>
+      <div class="skill reveal"><h3>Platform &amp; DevOps</h3><ul><li>Docker</li><li>Kubernetes</li><li>GitLab CI/CD</li><li>Nginx</li><li>YARP API Gateway</li><li>Linux servers · Cloudflare</li></ul></div>
+      <div class="skill reveal"><h3>AI</h3><ul><li>Ollama</li><li>Groq</li><li>LLM summarization</li><li>OCR / OMR (Tesseract)</li><li>Claude Code · Codex (agentic dev)</li></ul></div>
       <div class="skill reveal"><h3>Interactive</h3><ul><li>Unity</li><li>Unreal Engine</li><li>GameMaker</li><li>AR / VR</li></ul></div>
-      <div class="skill reveal"><h3>Languages</h3><ul><li>Arabic</li><li>French</li><li>English</li></ul></div>
+      <div class="skill reveal"><h3>Languages</h3><ul><li>Arabic · native</li><li>English · professional</li><li>French · conversational</li></ul></div>
     </div>
   </div>
 </section>
@@ -453,7 +451,7 @@
   <div class="wrap">
     <p class="kicker reveal">07 — Contact</p>
     <h2 id="contact-title" class="h2 h2--xl reveal">Let's build something<br><em>that ships.</em></h2>
-    <p class="section__lede reveal">Open to full-stack, platform and mobile engineering roles in Europe and Canada, on-site, hybrid or remote.</p>
+    <p class="section__lede reveal">Open to full-stack, platform and mobile engineering roles in Europe and Canada, on-site with relocation, hybrid or remote.</p>
     <div class="contact__row reveal">
       <a class="btn btn--primary btn--lg" href="mailto:loukatankionline@gmail.com">loukatankionline@gmail.com</a>
       <button type="button" class="btn btn--ghost" id="copy-email" data-email="loukatankionline@gmail.com">Copy email</button>
@@ -461,7 +459,7 @@
     <ul class="socials reveal">
       <li><a href="https://www.linkedin.com/in/malekje/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
       <li><a href="https://github.com/malekje" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
-      <li><span class="ph">Malek: add CV/résumé PDF link</span></li>
+      <li><a href="assets/docs/Malek_Mayeh_CV.pdf" download>Download CV (PDF) <span aria-hidden="true">↓</span></a></li>
     </ul>
   </div>
 </section>
