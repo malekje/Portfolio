@@ -136,7 +136,7 @@
           <h3>Full-Stack Developer · <span class="muted">Poulina Group Holding (PGH), Tunisia</span></h3>
           <p>Building and maintaining enterprise web and mobile applications for group-wide digital transformation.</p>
           <ul class="bullets">
-            <li>Contributed to an enterprise <strong>marketing &amp; advertising management platform</strong>: billboard planning, multi-step approval workflows, role-based permissions, automated notifications, campaign management, social-media integrations and AI-assisted text processing.</li>
+            <li>Contributed to <strong>InstiPanel</strong>, the group's marketing &amp; advertising platform: billboard planning with photo-proof validation (provider uploads, marketing accepts or rejects), modules for Parc hors Instit, Radio, TV, BTL and Street &amp; Trade Marketing, yearly budget tracking per filiale and module, multi-step approval workflows, role-based permissions, automated notifications, campaign management, social-media integrations and AI-assisted text processing.</li>
             <li>Designed, built and deployed a <strong>unified API gateway</strong> (YARP), including its admin UI, giving all internal apps a single entry point with path-based routing managed from an admin UI, so new apps no longer need their own DNS entry.</li>
             <li>Designed <strong>Poulina Store</strong> (in development), an internal mobile app store with a native Kotlin client that is fed by GitLab CI/CD, filtered per subsidiary and distributed through the company MDM.</li>
             <li>Built the <strong>5S mobile app</strong> for tablet-based photo capture, the <strong>Climat Social</strong> anonymous-feedback module of the Plateforme DRH HR platform, and a <strong>document-digitization</strong> solution (OCR/OMR with Tesseract, QR codes, automated processing).</li>
@@ -325,15 +325,27 @@
 
     <h2 class="h2 h2--sub reveal">Enterprise &amp; product work</h2>
     <div class="cards">
-      <article class="card reveal">
-        <div class="case__labels"><span class="badge badge--contrib">Contributor</span></div>
-        <h3 class="h4">Marketing &amp; Advertising Management Platform</h3>
-        <p>An enterprise platform for planning and running the group's advertising: billboard planning, campaign management and the multi-step approvals around them.</p>
+      <article class="card card--wide reveal">
+        <div class="case__labels"><span class="badge badge--contrib">Contributor</span><span class="badge">Marketing platform</span></div>
+        <h3 class="h4">InstiPanel: Marketing &amp; Advertising Management Platform</h3>
+        <p>The group's platform for running all of its advertising across every filiale and channel, from billboard campaigns to radio, TV and field marketing, with each filiale's yearly budget tracked per module.</p>
+        <ol class="flow" aria-label="Billboard photo validation workflow">
+          <li><span>1</span>Billboard provider pins proof-of-posting photos to each billboard</li>
+          <li><span>2</span>Marketing team reviews the photos</li>
+          <li><span>3</span>Accepted, or rejected and sent back to the provider</li>
+        </ol>
+        <ul class="xr" aria-label="Platform modules">
+          <li><strong>Instit</strong><span>Billboard planning &amp; photo validation</span></li>
+          <li><strong>Parc hors Instit</strong><span>Advertising outside the Instit network</span></li>
+          <li><strong>Radio &amp; TV</strong><span>Broadcast campaigns</span></li>
+          <li><strong>BTL</strong><span>Below-the-line activations</span></li>
+          <li><strong>Street &amp; Trade Marketing</strong><span>Field &amp; point-of-sale actions</span></li>
+          <li><strong>Budget tracking</strong><span>Yearly budget per filiale, per module</span></li>
+        </ul>
         <ul class="bullets">
-          <li>Approval workflows with role-based permissions</li>
-          <li>Automated notifications for workflow events</li>
-          <li>Social-media integrations for campaign content</li>
-          <li>AI-assisted text processing in content flows</li>
+          <li>Multi-step approval workflows with role-based permissions</li>
+          <li>Automated notifications on workflow events</li>
+          <li>Campaign management, social-media integrations and AI-assisted text processing</li>
         </ul>
         <ul class="tags"><li>Angular</li><li>TypeScript</li><li>.NET 8</li><li>EF Core</li><li>SQL Server</li><li>SignalR</li><li>Hangfire</li></ul>
       </article>
